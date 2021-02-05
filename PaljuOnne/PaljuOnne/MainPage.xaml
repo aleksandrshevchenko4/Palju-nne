@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PaljuOnne.MainPage">
+    <StackLayout BackgroundColor="Wheat">
+        <Picker x:Name="contactPicker" Title="Выбрать контакт..."/>
+        <Label x:Name="maill" Text="" HorizontalOptions="Center"/>
+        <Label x:Name="num" Text="" HorizontalOptions="Center"/>
+        <Switch x:Name="leftRight" IsToggled="false" HorizontalOptions="CenterAndExpand" Toggled="leftRight_Toggled"/>
+        <Label x:Name="congrat" Text="Поздравить по E-mail" HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+        <Image Source="paljuonne.jpg" HeightRequest="300" WidthRequest="300"/>
+        <Button x:Name="congratulate" Text="Поздравить"/>
+    </StackLayout>
+</ContentPage>
